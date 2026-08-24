@@ -5,5 +5,5 @@ exit
 sudo mv /var/lib/postgres/wdi.dump ./wdi.dump
 sudo chmod 777 ./wdi.dump
 
-zip -s 2g wdi.zip wdi.dump
+zip -s 1g wdi.zip wdi.dump
 rm wdi.dump

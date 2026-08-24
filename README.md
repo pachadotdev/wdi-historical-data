@@ -12,7 +12,7 @@ How to use it?
 
 1. Download all of the ZIP parts from the [releases page](https://github.com/pachadotdev/wdi-historical-data/releases/tag/sql-dump).
 
-2. Unzip *wdi.zip*.
+2. Unzip *wdi.zip* (e.g., `7z x wdi.zip`)
 
 3. Restore the database with
 
