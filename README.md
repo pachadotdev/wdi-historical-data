@@ -98,11 +98,14 @@ library(tinyplot)
 last10_revisions <- sort(unique(wdi_gdp$revision))
 last10_revisions <- tail(last10_revisions, 10)
 
+wdi_gdp <- wdi_gdp[year >= 2000]
 wdi_gdp <- wdi_gdp[revision %in% last10_revisions]
 wdi_gdp <- wdi_gdp[indicator_code == "NY.GDP.MKTP.KD"]
 wdi_gdp <- wdi_gdp[iso3 == "GBR"]
 
 wdi_gdp <- wdi_gdp[, year := as.numeric(year)]
+
+tpar(bg = "white")
 
 tinyplot(
     value ~ year,
