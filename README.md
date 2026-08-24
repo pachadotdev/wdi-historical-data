@@ -10,7 +10,7 @@ table rather than different spreadsheets with changing formats).
 
 How to use it?
 
-1. Download all of the ZIP parts from the [releases page](https://github.com/pachadotdev/wdi-all-revisions/releases/tag/sql-dump).
+1. Download all of the ZIP parts from the [releases page](https://github.com/pachadotdev/wdi-historical-data/releases/tag/sql-dump).
 
 2. Unzip *wdi.zip*.
 
