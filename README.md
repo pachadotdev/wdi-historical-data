@@ -17,10 +17,11 @@ How to use it?
 3. Restore the database with
 
 ```bash
-psql -h localhost -p 5432 -U REPLACE_USER -v ON_ERROR_STOP=1 -c \
-    \"drop database if exists wdi; create database wdi owner REPLACE_USER;\";
+psql -h localhost -p 5432 -U REPLACE_USER -v ON_ERROR_STOP=1 \
+    -c 'drop database if exists wdi;' \
+    -c 'create database wdi owner REPLACE_USER;'
 
-pg_restore -h localhost -p REPLACE_PORT -U REPLACE_USER -d wdi \
+pg_restore -h localhost -p 5432 -U REPLACE_USER -d wdi \
     --no-owner --no-acl -v wdi.dump
 ```
 

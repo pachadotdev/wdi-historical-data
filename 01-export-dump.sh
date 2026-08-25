@@ -1,9 +1,5 @@
 # Create SQL dump and restore
 
-pg_dump wdi > wdi.dump
-exit
-sudo mv /var/lib/postgres/wdi.dump ./wdi.dump
-sudo chmod 777 ./wdi.dump
-
+pg_dump -Fc wdi -f wdi.dump
 zip -s 1g wdi.zip wdi.dump
 rm wdi.dump
