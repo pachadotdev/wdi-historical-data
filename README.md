@@ -134,11 +134,11 @@ tinyplot(
 ```
 
 <figure>
-<img src="dev/wdi.png" alt="wdi-plot"/>
+<img src="wdi.png" alt="wdi-plot"/>
 </figure>
 
 Here is the DB diagram:
 
 <figure>
-<img src="dev/db-diagram.svg" alt="db-diagram"/>
+<img src="db-diagram.svg" alt="db-diagram"/>
 </figure>

@@ -1,8 +1,5 @@
 https://databank.worldbank.org/data/download/Archive/WDI_excel_2026_01_29.zip
 https://databank.worldbank.org/data/download/Archive/WDI_excel_2026_02_25.zip
-https://databank.worldbank.org/data/download/Archive/WDI_excel_2026_04_09.zip
-https://databank.worldbank.org/data/download/Archive/WDI_excel_2026_07_15.zip
-https://databankfiles.worldbank.org/public/ddpext_download/Archive/WDI_EXCEL_2026_10_08.zip
 https://databank.worldbank.org/data/download/Archive/WDI_excel_2025_01_28.zip
 https://databank.worldbank.org/data/download/Archive/WDI_excel_2025_03_25.zip
 https://databank.worldbank.org/data/download/Archive/WDI_excel_2025_04_17.zip
