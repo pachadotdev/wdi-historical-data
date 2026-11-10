@@ -1,0 +1,5 @@
+^app\.R$
+^dev$
+^\.github$
+^\.vscode$
+^LICENSE\.txt$

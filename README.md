@@ -47,13 +47,28 @@ wdi_indicator_map <- c(
   "NY.GDP.PCAP.KD"
 )
 
+dbGetQuery(
+  con,
+  sprintf(
+    "select indicator_code, broad_topic_tidy
+    from wdi_indicators
+    where indicator_code in (%s)",
+    paste0("'", wdi_indicator_map, "'", collapse = ", ")
+  )
+)
+
+#   indicator_code         broad_topic_tidy
+# 1 NY.GDP.MKTP.CD economic_policy_and_debt
+# 2 NY.GDP.MKTP.KD economic_policy_and_debt
+# 3 NY.GDP.PCAP.CD economic_policy_and_debt
+# 4 NY.GDP.PCAP.KD economic_policy_and_debt
+
 wdi_gdp <- setDT(dbGetQuery(
   con,
   sprintf(
-    "select w.year, w.iso3, w.revision, i.indicator_code, w.value
-    from wdi_raw as w
-    inner join wdi_indicators_raw as i on i.id = w.indicator_id
-    where i.indicator_code in (%s)",
+    "select year, iso3, revision, indicator_code, value
+    from economic_policy_and_debt
+    where indicator_code in (%s)",
     paste0("'", wdi_indicator_map, "'", collapse = ", ")
   )
 ))
@@ -119,5 +134,11 @@ tinyplot(
 ```
 
 <figure>
-<img src="wdi.png" alt="wdi-plot"/>
+<img src="dev/wdi.png" alt="wdi-plot"/>
+</figure>
+
+Here is the DB diagram:
+
+<figure>
+<img src="dev/db-diagram.svg" alt="db-diagram"/>
 </figure>

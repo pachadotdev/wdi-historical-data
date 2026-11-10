@@ -1,0 +1,23 @@
+Package: wdihistoricaldata
+Type: Package
+Title: ADD TITLE
+Version: 0.1
+Authors@R: c(
+    person(
+        given = "YOUR",
+        family = "NAME",
+        role = c("aut", "cre"),
+        email = "YOUR@EMAIL.COM",
+        comment = c(ORCID = "0000-0001-0002-0003"))
+    )
+Depends: tabler, R(>= 4.1.0)
+Description: ADD DESCRIPTION. TWO OR MORE LINES
+License: Apache License 2.0
+BugReports: https://github.com/USERNAME/PKGNAME/issues
+URL: https://WEBSITE.COM
+Encoding: UTF-8
+NeedsCompilation: no
+LazyData: true
+Imports: 
+    d3po,
+    RPostgres
